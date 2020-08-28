@@ -1,0 +1,3 @@
+[submodule "Armatus/armatus"]
+	path = Armatus/armatus
+	url = https://github.com/kingsfordgroup/armatus.git
