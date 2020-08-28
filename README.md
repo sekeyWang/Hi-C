@@ -28,10 +28,16 @@ make armatus
 ```
 docker-compose exec armatus bash
 ```
-
-3. Test method
+3. How to build
 
 ```
+chmod +x entrypoint.sh
+./entrypoint.sh
+```
+
+4. Test
+```
+chmod +x test.sh
 ./test.sh
 ```
 
@@ -49,14 +55,9 @@ make arrowhead
 docker-compose exec arrowhead bash
 ```
 
-3. How to build
 
-```
-chmod +x entrypoint.sh
-./entrypoint.sh
-```
+3. Test method
 
-4. Test
 ```
 chmod +x test.sh
 ./test.sh
