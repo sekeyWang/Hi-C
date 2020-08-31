@@ -3,24 +3,48 @@ version: '3.8'
 services: 
   armatus:
     volumes: 
-      - ./armatus/:/root
+      - ./Armatus/:/root
     build:
-      context: armatus/
+      context: Armatus/
     working_dir: /root
     command: tail -f /dev/null
   
   arrowhead:
     build:
-      context: arrowhead/
+      context: Arrowhead/
     volumes: 
-      - ./arrowhead/:/root
+      - ./Arrowhead/:/root
     working_dir: /root
     command: tail -f /dev/null
   
   catch:
     build:
-      context: catch/
+      context: CaTCH/
     volumes: 
-      - ./catch/:/root
+      - ./CaTCH/:/root
+    working_dir: /root
+    command: tail -f /dev/null
+  
+  chac:
+    build:
+      context: CHAC/
+    volumes: 
+      - ./CHAC/:/root
+    working_dir: /root
+    command: tail -f /dev/null
+  
+  chdf:
+    build:
+      context: CHDF/
+    volumes: 
+      - ./CHDF/:/root
+    working_dir: /root
+    command: tail -f /dev/null
+  
+  dedoc:
+    build:
+      context: deDoc/
+    volumes: 
+      - ./deDoc/:/root
     working_dir: /root
     command: tail -f /dev/null
