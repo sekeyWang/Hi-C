@@ -16,3 +16,11 @@ services:
       - ./arrowhead/:/root
     working_dir: /root
     command: tail -f /dev/null
+  
+  catch:
+    build:
+      context: catch/
+    volumes: 
+      - ./catch/:/root
+    working_dir: /root
+    command: tail -f /dev/null

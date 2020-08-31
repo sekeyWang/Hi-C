@@ -1,4 +1,4 @@
-.PHONY: armatus arrowhead
+.PHONY: armatus arrowhead catch
 
 all:
 	docker-compose up --build -d
@@ -12,3 +12,6 @@ armatus: HIC001_50k_KR.chr6
 arrowhead:
 	wget -P Arrowhead -O "juicer_tools" -c https://s3.amazonaws.com/hicfiles.tc4ga.com/public/juicer/juicer_tools_1.22.01.jar
 	cp HIC003_arrowhead.chr1.hic  Arrowhead/HIC003_arrowhead.chr1.hic
+
+catch:
+	cp HIC001_50k_KR.chr6 CaTCH/HIC001_50k_KR.chr6
