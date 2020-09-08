@@ -48,3 +48,27 @@ services:
       - ./deDoc/:/root
     working_dir: /root
     command: tail -f /dev/null
+  
+  east:
+    build:
+      context: EAST/
+    volumes: 
+      - ./EAST/:/root
+    working_dir: /root
+    command: tail -f /dev/null
+  
+  gmap:
+    build:
+      context: GMAP/
+    volumes: 
+      - ./GMAP/:/root
+    working_dir: /root
+    command: tail -f /dev/null
+  
+  hicexplorer:
+    build:
+      context: HiCExplorer/
+    volumes: 
+      - ./HiCExplorer/:/root
+    working_dir: /root
+    command: tail -f /dev/null

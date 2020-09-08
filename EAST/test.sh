@@ -1,0 +1,1 @@
+python3 EAST2_test.py HIC001_50k_KR.chr6 domain.out 50000

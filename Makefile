@@ -1,4 +1,4 @@
-.PHONY: Armatus Arrowhead CaTCH CHAC CHDF deDoc
+.PHONY: Armatus Arrowhead CaTCH CHAC CHDF deDoc EAST GMAP HiCExplorer
 
 all:
 	docker-compose up --build -d
@@ -26,3 +26,13 @@ CHDF:
 deDoc:
 	cp HIC001_50k_KR.chr6 deDoc/HIC001_50k_KR.chr6
 	docker-compose exec dedoc bash
+EAST:
+	cp HIC001_50k_KR.chr6 EAST/HIC001_50k_KR.chr6
+	docker-compose exec east bash
+GMAP:
+	cp HIC001_50k_KR.chr6 GMAP/HIC001_50k_KR.chr6
+	docker-compose exec gmap bash
+
+HiCExplorer:
+	cp HIC001_50k_KR.chr6 HiCExplorer/HIC001_50k_KR.chr6
+	docker-compose exec hicexplorer bash
